@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#haul-tracker {
+  background: black;
+  padding: 30px;
+  margin: 30px 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+#current-time {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.log-buttons, .custom-log, .controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: gold;
+}
+
+.custom-log input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#total-today {
+  font-weight: bold;
+  color: gold;
+}
+
+h2, h3 {
+  color: gold;
+  text-align: center;
+}
+
+ul#hourly-log {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+ul#hourly-log li {
+  background: gold;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  button {
+    flex: 1 1 calc(33.33% - 10px);
+  }
+
+  .custom-log input {
+    width: 100%;
+  }
+
+  .log-buttons, .controls {
+    gap: 6px;
+  }
+}
