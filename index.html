@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haul Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="haul-tracker">
+    <h1>Haul Tracker</h1>
+    <h2>Current Time</h2>
+    <div id="current-time"></div>
+    <h1 id="date"> Today's Date</h1>
+
+    <div class="log-buttons">
+      <button data-count="1">+1</button>
+      <button data-count="2">+2</button>
+      <button data-count="3">+3</button>
+      <button data-count="4">+4</button>
+      <button data-count="5">+5</button>
+      <button data-count="6">+6</button>
+    </div>
+
+    <div class="custom-log">
+      <input type="number" id="custom-count" placeholder="Custom amount" />
+      <button id="log-custom">Log</button>
+    </div>
+
+    <div class="controls">
+      <button id="undo-button">Undo</button>
+      <button id="reset-button">Reset Day</button>
+    </div>
+
+    <h2>Total Today: <span id="total-today">0</span></h2>
+    
+    <h3>Hourly Breakdown:</h3>
+    <ul id="hourly-log"></ul>
+<a class="donate-link" href="https://account.venmo.com/u/drivenpromos" target="_blank"><center>
+  ☕ Buy me a coffee if this helped!</center>
+</a>
+
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
