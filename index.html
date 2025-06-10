@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pallet Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="haul-tracker">
+    <h1>Pallet Tracker</h1>
+    <h2>Current Time</h2>
+    <div id="current-time"></div>
+    <h1 id="date"> Today's Date</h1>
+
+    <div class="log-buttons">
+      <button data-count="1">+1</button>
+      <button data-count="2">+2</button>
+      <button data-count="3">+3</button>
+      <button data-count="4">+4</button>
+      <button data-count="5">+5</button>
+      <button data-count="6">+6</button>
+    </div>
+
+    <div class="custom-log">
+      <input type="number" id="custom-count" placeholder="Custom amount" />
+      <button id="log-custom">Log</button>
+    </div>
+
+    <div class="controls">
+      <button id="undo-button">Undo</button>
+      <button id="reset-button">Reset Day</button>
+    </div>
+
+    <h2>Total Today: <span id="total-today">0</span></h2>
+    
+    <h3>Hourly Breakdown:</h3>
+    <ul id="hourly-log"></ul>
+    <h3>How to use</h3>
+    <p>Click the buttons to log how many pallets you have gathered with your lift truck. You can also enter a custom amount and log it.</p>
+    <p>Use the undo button to remove the last logged amount, and the reset button to clear today's total.</p>
+    
+    <h3>About</h3>
+    <p>This tool helps you track your pallets moved throughout the day within a warehouse. It logs the total amount and provides an hourly breakdown. App is set up to show military time.</p>
+    <h3>DISCLAIMER</h3>
+    <p>This tool is not affiliated with any company. It is intended for personal use only. Follow your company guidlines</p>
+    <p>© 2025 Driven Promos LLC</p>
+  
+<a class="donate-link" href="https://account.venmo.com/u/drivenpromos" target="_blank"><center>
+  ☕Click here to buy me a coffee if this helped!</center>
+</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
